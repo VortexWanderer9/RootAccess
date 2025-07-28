@@ -1,0 +1,24 @@
+.grid-back {
+    position: fixed;
+    inset: 0;
+    background:
+      linear-gradient(rgba(0, 255, 255, 0.1), transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 255, 0.1), transparent 1px);
+    background-size: 100px 100px;
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.7))
+            drop-shadow(0 0 16px rgba(0, 255, 255, 0.9));
+            z-index: 0;
+    animation: drift 100s linear infinite;
+}
+
+.grid-back::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(circle at top left, rgba(0, 255, 255, 0.12), transparent);
+}
+@keyframes drift {
+    0%{background-position: 0 0;}
+    100%{background-position: 100px 100px;}
+}

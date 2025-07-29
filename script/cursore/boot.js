@@ -1,5 +1,6 @@
 const bootText = document.querySelector('.boot-text')
 const bootScreen = document.querySelector('.boot-screen')
+ document.querySelector('#main').style.display = "hidden"
 
 const lines = [
   "[BOOT] Initializing hardware protocols...",
@@ -30,6 +31,7 @@ function typeBoot() {
     }else{
         setTimeout(() =>{
             document.querySelector(".boot-screen").style.display = "none"
+            document.querySelector('#main').style.display = "block"
             // Example: fade out after 3 seconds
         }, 1000)
     }

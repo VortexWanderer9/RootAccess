@@ -76,19 +76,19 @@ menu.active img{
 @media (max-width: 790px) {
      .menu { display: block; }
     .nav-links {
-        position: fixed;
+        position: fixed;    
         top: -120%;
         left: 50%;
         transform: translateX(-50%) scale(0.9);
-        width: 70%;
+        width: 80%;
         background: rgba(255,255,255,0.1);
         border: 1px solid rgba(255,255,255,0.2);
         border-radius: 25px;
         backdrop-filter: blur(25px) saturate(200%);
         flex-direction: column;
-        align-items: center;
+        align-items: start;
         gap: 30px;
-        padding: 70px 0;
+        padding: 70px 15px;
         box-shadow: 0 12px 40px rgba(0,0,0,0.6);
         transition: top 0.5s ease, transform 0.4s ease, opacity 0.4s ease;
         z-index: 99;
@@ -154,7 +154,7 @@ menu.active img{
   display: block;
   object-fit: cover;
   z-index: 100;
-  transition: all .3s ease-in-out;
+  transition: all .8s ease-in-out;
   
 }
 .image-container img:hover{
@@ -168,6 +168,12 @@ transform: scale(1.1);
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   font-size: 1.3rem
+}
+
+.content p{
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1;
+letter-spacing: 1px;
 }
 
 @media (max-width:900px) {

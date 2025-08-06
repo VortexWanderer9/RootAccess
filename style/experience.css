@@ -1,4 +1,60 @@
 .experience{
-    height: 100vh;
+    padding: 20px;
     width: 100%;
+font-family: 'Fira Code', monospace;
+
+}
+
+.list-of-exp{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+
+}
+.dev-exp-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 100;
+  cursor: pointer;
+ background: rgba(255, 255, 255, 0.05);
+  opacity: 0;
+  transition: transform 0.4s ease-in-out;
+}
+.dev-exp-list:hover .icon svg{
+    transform: scale(1.05);
+     transform: rotate(10deg);
+}
+.dev-exp-list:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+    transition: transform .8s ease-in-out;
+     background: rgba(255, 255, 255, 0.1);
+}
+
+.dev-exp-list .icon svg{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    color: rgb(4, 129, 239, 0.6);
+    transition: transform .4s ease-in-out;
+}
+
+.content-text{
+    font-size: 16px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dev-exp-list.animate {
+  animation: fadeIn 0.8s ease-out forwards;
 }

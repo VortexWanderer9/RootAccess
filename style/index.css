@@ -68,6 +68,7 @@ nav.scrolled{
     display: none;
     cursor: pointer;
     z-index: 99;
+    
 }
 menu.active img{
     transform: translate(90deg);
@@ -171,13 +172,15 @@ transform: scale(1.1);
 }
 
 .content p{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Fira Code', monospace;
   line-height: 1;
 letter-spacing: 1px;
+  color: rgba(0, 255, 255, 0.8);
+  /* text-shadow: 0 0 10px rgba(0, 255, 255, 0.5); */
 }
 
 @media (max-width:900px) {
-  .landing-container{
+  .landing-container{ 
     flex-direction: column;
     gap: 1rem;
   }
@@ -187,6 +190,36 @@ letter-spacing: 1px;
 }
 
 .content{
-  font-size: 1rem
+  font-size: 1rem;
+  padding: 10px;
 }
+}
+
+.heading-txt{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  color: rgba(0, 255, 255, 0.8);
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  position: relative;
+  padding: 10px;
+  
+  cursor: pointer;
+}
+.heading-txt::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background: rgba(0, 255, 255, 0.5);
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+   transition: width 0.3s ease-in-out;
+}
+.heading-txt:hover::before {
+  width: 100%;
+
 }

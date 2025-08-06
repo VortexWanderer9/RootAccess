@@ -11,6 +11,11 @@ const colors = [
 ];
 
 
+const viewportWidth = window.innerWidth;
+console.log("Viewport width:", viewportWidth);
+if(viewportWidth > 760){
+    
+    
     const circles = []
     const circleElement = 20
 
@@ -47,3 +52,7 @@ const colors = [
 
     }
     animate()
+}else{
+    console.log("your Screen is small");
+    
+}

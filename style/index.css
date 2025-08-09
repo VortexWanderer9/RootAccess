@@ -14,6 +14,7 @@ nav {
     transform: translateX(-50%);
     width: 90%;
     padding: 30px 40px;
+      
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
@@ -43,7 +44,7 @@ nav.scrolled{
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+   color: rgba(0, 255, 255, 0.8);
     font-size: 20px;
     position: relative;
     transition: .3s ease-in-out;
@@ -82,10 +83,9 @@ menu.active img{
         left: 50%;
         transform: translateX(-50%) scale(0.9);
         width: 80%;
-        background: rgba(255,255,255,0.1);
+        background: rgba(255,255,255,0.2);
         border: 1px solid rgba(255,255,255,0.2);
         border-radius: 25px;
-        backdrop-filter: blur(25px) saturate(200%);
         flex-direction: column;
         align-items: start;
         gap: 30px;
@@ -100,13 +100,12 @@ menu.active img{
         top: 100px;
         transform: translateX(-50%) scale(1);
         opacity: 1;
-        animation: fadeIn 0.4s ease;
       }
       .nav-links.closing {
         top: -120%;
         opacity: 0;
         transform: translateX(-50%) scale(0.9);
-        animation: fadeOut 0.4s ease;
+        animation: fadeOut 0.5s ease;
       }
 
       
@@ -121,9 +120,7 @@ menu.active img{
       }
 
     .nav-link {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    
         gap: 20px;
         opacity: 0;
         animation: linkFade 0.5s forwards;

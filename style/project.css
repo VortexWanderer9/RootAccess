@@ -1,0 +1,23 @@
+.page-status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+   border: 1px solid rgba(1, 255, 255, 0.1);
+   border-radius: 8px;
+   padding: 10px 20px;
+
+}
+.page-status div{
+    padding: 0.5rem 1rem;
+    color: #01ffff;
+    border: 1px solid rgba(1, 255, 255, 0.1);
+    border-radius: 4px;
+    transition: scale 0.3s, transform 0.3s;
+
+}
+.page-status div:hover{
+    transform: scale(1.05);
+    background-color: rgba(1, 255, 255, 0.1);
+
+}
